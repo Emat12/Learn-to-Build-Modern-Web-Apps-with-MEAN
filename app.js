@@ -10,7 +10,7 @@ app.factory('posts', [function() {
 app.controller('MainCtrl', [
     '$scope',
     'posts',
-    function($scope) {
+    function($scope, posts) {
         $scope.test = 'Hello world!'
         
         $scope.posts = posts.posts;
